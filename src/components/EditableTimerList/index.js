@@ -1,7 +1,7 @@
-import React from 'react'
-import EditableTimer from '../EditableTimer/index'
+import * as React from 'react'
+import { EditableTimer } from '../EditableTimer/index'
 
-class EditableTimerList extends React.Component {
+export class EditableTimerList extends React.Component {
     render(){
         return(
             <div id="timers">
@@ -23,5 +23,3 @@ class EditableTimerList extends React.Component {
         )
     }
 }
-
-export default EditableTimerList;

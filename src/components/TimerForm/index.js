@@ -1,6 +1,6 @@
-import React from 'react'
+import * as React from 'react'
 
-class TimerForm extends React.Component{
+export class TimerForm extends React.Component{
     render(){
         const submitText = this.props.title ? 'Update' : 'Create';
         return(
@@ -29,5 +29,3 @@ class TimerForm extends React.Component{
         )
     }
 }
-
-export default TimerForm;

@@ -1,7 +1,7 @@
-import React from 'react'
-import TimerForm from '../TimerForm/index'
+import * as React from 'react'
+import { TimerForm } from '../TimerForm/index'
 
-class ToggleableTimerForm extends React.Component{
+export class ToggleableTimerForm extends React.Component{
     render(){
         if(this.props.isOpen){
             return(<TimerForm/>)
@@ -16,5 +16,3 @@ class ToggleableTimerForm extends React.Component{
         }
     }
 }
-
-export default ToggleableTimerForm;

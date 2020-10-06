@@ -1,8 +1,8 @@
-import React from 'react'
-import Timer from '../Timer/index'
-import TimerForm from '../TimerForm/index'
+import * as React from 'react'
+import { Timer } from '../Timer/index'
+import { TimerForm } from '../TimerForm/index'
 
-class EditableTimer extends React.Component{
+export class EditableTimer extends React.Component{
     render(){
         if(this.props.editFormOpen){
             return(<TimerForm
@@ -22,5 +22,3 @@ class EditableTimer extends React.Component{
         }
     }
 }
-
-export default EditableTimer;

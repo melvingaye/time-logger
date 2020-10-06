@@ -1,6 +1,6 @@
-import React from 'react'
+import * as React from 'react'
 
-class Timer extends React.Component{
+export class Timer extends React.Component{
 
     msToHMS( ms ) {
         var seconds = ms / 1000;
@@ -43,5 +43,3 @@ class Timer extends React.Component{
         )
     }
 }
-
-export default Timer;
